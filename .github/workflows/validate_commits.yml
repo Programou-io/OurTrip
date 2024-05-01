@@ -1,0 +1,46 @@
+name: Commit Validation
+
+on:
+  pull_request:
+    branches: [main, develop]
+    types: [opened, synchronize]
+
+jobs:
+  validate-commits:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Install gitmoji-cli
+        run: npm install -g gitmoji-cli
+
+      - name: Validate commits
+        run: |
+          # Check each commit for the required standards
+          commits=$(git log --format="%H" ${{ github.event.before }}..${{ github.sha }})
+          for commit in $commits; do
+            # Check if commit message is in English
+            message=$(git log --format="%s" -n 1 $commit)
+            if ! echo $message | grep -qP "^[a-zA-Z0-9 ,.!?'\"]+$"; then
+              echo "❌ Commit (hash) $commit does not contain only English characters"
+              exit 1
+            fi
+
+            # Check if author is properly configured
+            author_name=$(git log --format="%aN" -n 1 $commit)
+            author_email=$(git log --format="%aE" -n 1 $commit)
+            if [ -z "$author_name" ] || [ -z "$author_email" ]; then
+              echo "❌ Commit (hash) $commit does not have author name and email configured"
+              exit 1
+            fi
+
+            # Check for gitmoji pattern
+            if ! echo $message | gitmoji -c | grep -q "^:.*: "; then
+              echo "❌ Commit (hash) $commit does not follow the gitmoji pattern"
+              exit 1
+            fi
+          done

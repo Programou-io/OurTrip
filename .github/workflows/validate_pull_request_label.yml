@@ -1,0 +1,18 @@
+name: Validate Pull Request Label
+
+on:
+  pull_request:
+    types: [opened, labeled, unlabeled, synchronize]
+
+jobs:
+  validate-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Validate Labels
+        uses: NathanielHill/check-pr-label-action@v4.0.0
+        with:
+            github-token: '${{ secrets.GH_TOKEN  }}'
+            valid-labels: 'feature, documentation, bug, chore, hotfix, ci, performance, style, test, build'
