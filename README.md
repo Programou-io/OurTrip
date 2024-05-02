@@ -6,6 +6,8 @@ This app makes planning and organizing trips for groups easier. With OurTrip, pl
 
 OurTrip is an open source project developed by the vibrant SwiftConnect community. Our goal is to provide developers with the experience of contributing to a significant project, developing their skills in a collaborative and fun environment!
 
+Help us spread the word about this amazing project! Click the '⭐️ Star' button in the upper right corner of the browser to help the repository rank better. If possible, share it 😉
+
 ## 🗃️ Read in Your Preferred Language
 
 - [🇧🇷 Portuguese (Brazilian)](./Docs/README_PT_BR.md)
