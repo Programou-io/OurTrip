@@ -10,7 +10,7 @@ Nos ajude a divultar ainda mais esse projeto incrivel, para isso, clique no bot�
 
 ## 🗃️ Leia no seu idioma de preferencia
 
-- [🇧🇷 Portugues (Brasileiro)](./Docs/PtBr/README.md)
+- [🇧🇷 Portugues (Brasileiro)](./Docs/README.md)
 - [🇺🇸 Ingles (Americano)](./README.md)
 
 Não encontrou seu idioma ? caso queira pode contribuir com o repositorio adiconando uma traduçao para a documentação.
@@ -67,9 +67,9 @@ Pronto para colocar a mão na massa? Siga estes passos mágicos:
 
 1. Faça um [fork do projeto](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks).
 2. Clone o projeto localmente.
-3. Crie sua branch seguindo nosso padrão em [BRANCH_PATTERN.md](./PtBr/BRANCH_PATTERN.md).
+3. Crie sua branch seguindo nosso padrão em [BRANCH_PATTERN.md](./BRANCH_PATTERN.md).
 4. Implemente suas alterações.
-5. Realize o commit conforme nossa convenção em [COMMIT_MESSAGE.md](./PtBr/COMMIT_MESSAGE.md).
+5. Realize o commit conforme nossa convenção em [COMMIT_MESSAGE.md](./COMMIT_MESSAGE.md).
 6. Faça um push para seu repositório remoto.
 7. Abra um pull request conforme nosso template.
 8. Preencha adequadamente o pull request.
