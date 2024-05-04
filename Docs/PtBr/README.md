@@ -86,6 +86,10 @@ Quer saber mais sobre como estamos compartilhando? Confira mais informações so
 
 Levamos muito a sério o nosso [Código de Conduta](./CODE_OF_CONDUCT). Comprometemo-nos a proporcionar um ambiente saudável e respeitoso para todos os colaboradores. Acreditamos que um ambiente comunitário positivo é fundamental para fomentar a colaboração e o desenvolvimento contínuo. Encorajamos todos a participar e a contribuir de maneira construtiva.
 
+## Código de Conduta
+
+Levamos muito a sério o nosso [Código de Conduta](./../../CODE_OF_CONDUCT). Comprometemo-nos a proporcionar um ambiente saudável e respeitoso para todos os colaboradores. Acreditamos que um ambiente comunitário positivo é fundamental para fomentar a colaboração e o desenvolvimento contínuo. Encorajamos todos a participar e a contribuir de maneira construtiva.
+
 ## 👥 Comunidade
 
 Ficou curioso a respeito da nossa comunidade? Acesse nosso [Notion](https://paolo-prodossimo-lopes.notion.site/Swift-Connect-Feed-b2f769f82c524b1e84faa582e4d983e6) e saiba mais!
