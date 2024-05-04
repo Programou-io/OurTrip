@@ -10,7 +10,7 @@ Help us spread the word about this amazing project! Click the '⭐️ Star' butt
 
 ## 🗃️ Read in Your Preferred Language
 
-- [🇧🇷 Portuguese (Brazilian)](./Docs/README_PT_BR.md)
+- [🇧🇷 Portuguese (Brazilian)](./Docs/PtBr/README.md)
 - [🇺🇸 English (American)](./README.md)
 
 Can't find your language? If you'd like, you can contribute to the repository by adding a translation for the documentation.
@@ -78,4 +78,4 @@ Ready to get your hands dirty? Follow these magical steps:
 
 ## 📜 License
 
-Want to know more about how we're sharing this treasure? Check out more information about the license in [LICENSE](./Docs/LICENSE).
+Want to know more about how we're sharing this treasure? Check out more information about the license in [LICENSE](./LICENSE).
