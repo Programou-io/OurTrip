@@ -79,3 +79,7 @@ Pronto para colocar a mão na massa? Siga estes passos mágicos:
 # 📜 Licença
 
 Quer saber mais sobre como estamos compartilhando esse tesouro? Confira mais informações sobre a licença no [LICENSE](./../../LICENSE).
+
+## 👥 Comunidade
+
+Ficou curioso a respeito da nossa comunidade? acesse nosso [Notion](https://paolo-prodossimo-lopes.notion.site/Swift-Connect-Feed-b2f769f82c524b1e84faa582e4d983e6) e saiba mais!
