@@ -76,9 +76,13 @@ Pronto para colocar a mão na massa? Siga estes passos mágicos:
 
 🛠 Pull requests devem passar pela CI antes da revisão. A aprovação requer no mínimo dois revisores: um contribuidor experiente e um administrador do repositório.
 
-# 📜 Licença
+## 📜 Licença
 
 Quer saber mais sobre como estamos compartilhando esse tesouro? Confira mais informações sobre a licença no [LICENSE](./../../LICENSE).
+
+## Código de Conduta
+
+Levamos muito a sério o nosso [Código de Conduta](./../../CODE_OF_CONDUCT). Comprometemo-nos a proporcionar um ambiente saudável e respeitoso para todos os colaboradores. Acreditamos que um ambiente comunitário positivo é fundamental para fomentar a colaboração e o desenvolvimento contínuo. Encorajamos todos a participar e a contribuir de maneira construtiva.
 
 ## 👥 Comunidade
 

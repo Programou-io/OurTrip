@@ -80,6 +80,10 @@ Ready to get your hands dirty? Follow these magical steps:
 
 Want to know more about how we're sharing this treasure? Check out more information about the license in [LICENSE](./LICENSE).
 
+## Code of Conduct
+
+We take our [Code of Conduct](./CODE_OF_CONDUCT) very seriously. We are committed to providing a healthy and respectful environment for all contributors. We believe that a positive community atmosphere is crucial for fostering collaboration and continuous development. We encourage everyone to participate and contribute constructively.
+
 ## 👥 Community
 
 Curious about our community? Visit our [Notion](https://paolo-prodossimo-lopes.notion.site/Swift-Connect-Feed-b2f769f82c524b1e84faa582e4d983e6) page to learn more!
