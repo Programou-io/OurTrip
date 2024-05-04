@@ -79,3 +79,7 @@ Ready to get your hands dirty? Follow these magical steps:
 ## 📜 License
 
 Want to know more about how we're sharing this treasure? Check out more information about the license in [LICENSE](./LICENSE).
+
+## 👥 Community
+
+Curious about our community? Visit our [Notion](https://paolo-prodossimo-lopes.notion.site/Swift-Connect-Feed-b2f769f82c524b1e84faa582e4d983e6) page to learn more!
