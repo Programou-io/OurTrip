@@ -53,13 +53,15 @@ _Obs: Caso voce mesmo queira atuar diretamente pode pular para seção "🤝 Com
 
 Precisa de ajuda ou tem uma dúvida? Não se acanhe! 🙋‍♂️
 
-1. Verifique se sua questão já foi abordada em issues abertas ou fechadas.
-2. Acesse [Issues do repositório](https://github.com/PaoloProdossimoLopes/OurTrip/issues).
-3. Clique em "New issue".
-4. Selecione o modelo "ℹ️ Tirar dúvida/ pedir ajuda".
-5. Envie sua solicitação para que possamos ajudar!
+1. Acesse a aba [Discussions](https://github.com/PaoloProdossimoLopes/OurTrip/discussions)
+2. Verifique se sua questão já foi abordada em issues abertas ou fechadas.
+3. Caso nao tenha clique em "New Discussion" para iniciar uma nova discusão.
+4. Selecione a categoria "Q&A".
+5. Envie sua duvida para que possamos ajudar!
 
-Encerre sua issue após ter sua dúvida esclarecida. Lembre-se: issues inativas por mais de um mês serão fechadas automaticamente, mas podem ser reabertas se necessário.
+Encerre sua discussão após ter sua dúvida esclarecida. Lembre-se: discussões inativas por mais de um mês serão fechadas automaticamente, mas podem ser reabertas se necessário.
+
+_obs: na aba de discussões do repositorio tem varias categorias alem de duvida, aproveite, esses topicos podem te ajudar em algo ou você mesmo pode ajudar outra pessoa_
 
 ## 🤝 Como Contribuir
 
