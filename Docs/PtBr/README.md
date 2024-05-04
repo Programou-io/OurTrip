@@ -78,4 +78,4 @@ Pronto para colocar a mão na massa? Siga estes passos mágicos:
 
 # 📜 Licença
 
-Quer saber mais sobre como estamos compartilhando esse tesouro? Confira mais informações sobre a licença no [LICENSE](./LICENSE).
+Quer saber mais sobre como estamos compartilhando esse tesouro? Confira mais informações sobre a licença no [LICENSE](./../../LICENSE).
