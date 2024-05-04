@@ -53,13 +53,15 @@ _Note: If you want to act directly, you can skip to the "🤝 How to Contribute"
 
 Need help or have a question? Don't be shy! 🙋‍♂️
 
-1. Check if your issue has already been addressed in open or closed issues.
-2. Visit the [repository's issues tab](https://github.com/PaoloProdossimoLopes/OurTrip/issues).
-3. Click on "New issue".
-4. Select the template "ℹ️ Ask a question/ seek help".
-5. Send your request so we can assist you!
+1. Go to the [Discussions](https://github.com/PaoloProdossimoLopes/OurTrip/discussions) tab.
+2. Check if your question has already been addressed in open or closed issues.
+3. If not, click on "New Discussion" to start a new discussion.
+4. Select the "Q&A" category.
+5. Post your question so we can help!
 
-Close your issue once your question has been answered. Remember: issues inactive for more than a month will be automatically closed but can be reopened if necessary.
+Close your discussion after your question has been answered. Remember: discussions that remain inactive for more than a month will be automatically closed, but can be reopened if necessary.
+
+_Note: the discussions tab in the repository has several categories besides questions, take advantage of this, these topics might help you or you might be able to help someone else._
 
 ## 🤝 How to Contribute
 
