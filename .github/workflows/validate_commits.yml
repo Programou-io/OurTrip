@@ -1,52 +1,46 @@
-name: Validate Commits
+name: Commit Validation
 
 on:
   pull_request:
-    branches:
-      - main
-      - develop
+    branches: [main, develop]
     types: [opened, synchronize]
 
 jobs:
   validate-commits:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Code
+      - name: Checkout code
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
 
-      - name: Fetch all history for all tags and branches
-        run: git fetch --no-tags --prune --depth=100 origin +refs/heads/*:refs/remotes/origin/*
+      - name: Install gitmoji-cli
+        run: npm install -g gitmoji-cli
 
-      - name: Validate Commit Messages
+      - name: Validate commits
         run: |
-          BASE_BRANCH="origin/${{ github.base_ref }}"
-          HEAD_BRANCH="$GITHUB_HEAD_REF"
-          # Check if base branch exists
-          if ! git rev-parse --verify $BASE_BRANCH; then
-            echo "Base branch does not exist: $BASE_BRANCH"
-            exit 1
-          fi
-          # Validate commit messages
-          COMMIT_LOG=$(git log --format="%s" $BASE_BRANCH...$HEAD_BRANCH)
-          while IFS= read -r line; do
-            if ! [[ $line =~ ^(:[a-z_]+: ) ]]; then
-              echo "Commit does not follow gitmoji standard: $line"
+          # Check each commit for the required standards
+          commits=$(git log --format="%H" ${{ github.event.before }}..${{ github.sha }})
+          for commit in $commits; do
+            # Check if commit message is in English
+            message=$(git log --format="%s" -n 1 $commit)
+            if ! echo $message | grep -qP "^[a-zA-Z0-9 ,.!?'\"]+$"; then
+              echo "Commit $commit does not contain only English characters"
               exit 1
             fi
-            if ! [[ $line =~ [A-Z] ]]; then
-              echo "Commit message is not in English: $line"
+
+            # Check if author is properly configured
+            author_name=$(git log --format="%aN" -n 1 $commit)
+            author_email=$(git log --format="%aE" -n 1 $commit)
+            if [ -z "$author_name" ] || [ -z "$author_email" ]; then
+              echo "Commit $commit does not have author name and email configured"
               exit 1
             fi
-          done <<< "$COMMIT_LOG"
 
-      - name: Check Commit Authors
-        run: |
-          AUTHORS=$(git log $BASE_BRANCH...$HEAD_BRANCH --pretty=format:"%an <%ae>")
-          if echo "$AUTHORS" | grep -qP "\b(?:[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})\b"; then
-            echo "All authors are correctly configured"
-          else
-            echo "Author information is missing or incorrect in some commits."
-            exit 1
-          fi
+            # Check for gitmoji pattern
+            if ! echo $message | gitmoji -c | grep -q "^:.*: "; then
+              echo "Commit $commit does not follow the gitmoji pattern"
+              exit 1
+            fi
+          done
