@@ -1,0 +1,43 @@
+name: Release Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Generate Changelog
+        run: npm run generate-changelog
+
+      - name: Get Latest Tag
+        id: get_latest_tag
+        run: echo "::set-output name=tag::$(git describe --abbrev=0 --tags)"
+
+      - name: Create Tag
+        id: create_tag
+        run: |
+          LATEST_TAG=${{ steps.get_latest_tag.outputs.tag }}
+          TAG=${LATEST_TAG#"v"}  # Remove the 'v' prefix
+          IFS='.' read -r major minor patch <<< "$TAG"
+          NEW_TAG="$major.$((minor+1)).$patch"
+          git tag "$NEW_TAG"
+          echo "::set-output name=tag::$NEW_TAG"
+
+      - name: Push Tag
+        if: steps.create_tag.outputs.tag != ''
+        run: git push origin ${{ steps.create_tag.outputs.tag }}
