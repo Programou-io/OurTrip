@@ -93,3 +93,5 @@ Levamos muito a sério o nosso [Código de Conduta](./../../CODE_OF_CONDUCT). Co
 ## 👥 Comunidade
 
 Ficou curioso a respeito da nossa comunidade? Acesse nosso [Notion](https://paolo-prodossimo-lopes.notion.site/Swift-Connect-Feed-b2f769f82c524b1e84faa582e4d983e6) e saiba mais!
+
+
