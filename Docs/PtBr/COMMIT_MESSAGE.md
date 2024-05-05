@@ -49,4 +49,4 @@ git commit -m "📝 Adicionada tradução do README para Português (Brasil)"
 git commit -m "⬆️ Atualizada versão do Snapkit de 'x.x.x' para 'y.y.y'"
 ```
 
-> Dica: Se tiver dificuldade para criar mensagens, considere usar um assistente de Inteligência Artificial. Fornecemos um [**Prompt**](Docs/PtBr/COMMIT_MESSAGE_AI_PROMPT.md) que pode ajudá-lo a solicitar à IA uma mensagem de commit baseada em sua descrição.
+> Dica: Se tiver dificuldade para criar mensagens, considere usar um assistente de Inteligência Artificial. Fornecemos um [**Prompt**](/COMMIT_MESSAGE_AI_PROMPT.md) que pode ajudá-lo a solicitar à IA uma mensagem de commit baseada em sua descrição.
