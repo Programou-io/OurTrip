@@ -4,21 +4,21 @@ Este aplicativo facilita o planejamento e a organização de viagens para grupos
 
 ## 🌟 Motivação
 
-OurTrip é um projeto open source desenvolvido pela vibrante comunidade SwiftConnect. Nosso objetivo é oferecer aos desenvolvedores a experiência de contribuir em um projeto significativo, desenvolvendo suas habilidades em um ambiente colaborativo e divertido!
+OurTrip é um projeto open source desenvolvido pela comunidade SwiftConnect. Nosso objetivo é oferecer aos desenvolvedores a experiência de contribuir em um projeto significativo, desenvolvendo suas habilidades em um ambiente colaborativo e divertido!
 
-Nos ajude a divultar ainda mais esse projeto incrivel, para isso, clique no botão "⭐️ Star" canto superior direito do navegador para ajudar o repositior a ser melhor rankeado. Se possivel compartilhe 😉
+Nos ajude a divulgar ainda mais esse projeto, para isso, clique no botão "⭐️ Star" no canto superior direito do navegador para ajudar o repositório a ser melhor rankeado. Se possível compartilhe 😉
 
-## 🗃️ Leia no seu idioma de preferencia
+## 🗃️ Leia no seu idioma de preferência
 
-- [🇧🇷 Portugues (Brasileiro)](./Docs/README.md)
+- [🇧🇷 Português (Brasileiro)](./Docs/README.md)
 - [🇺🇸 Ingles (Americano)](./README.md)
 
-Não encontrou seu idioma ? caso queira pode contribuir com o repositorio adiconando uma traduçao para a documentação.
+Não encontrou seu idioma? Caso queira pode contribuir com o rrepositório adicionando uma tradução para a documentação.
 
 1. Acesse a aba [Issues do repositório](https://github.com/PaoloProdossimoLopes/OurTrip/issues).
 2. Clique em "New issue".
 3. Selecione o modelo "💬 Sugerir nova funcionalidade".
-4. Preencha as informações solicitadas com entusiasmo.
+4. Preencha as informações solicitadas com as suas ideias.
 5. Submeta sua tradução!
 
 Sua tradução será analisada e, se aprovada, iremos mergea-la.
@@ -30,7 +30,7 @@ Quer ajudar a fazer o OurTrip ainda melhor? Siga os passos abaixo para adicionar
 1. Acesse a aba [Issues do repositório](https://github.com/PaoloProdossimoLopes/OurTrip/issues).
 2. Clique em "New issue".
 3. Selecione o modelo "✨ Sugerir nova funcionalidade".
-4. Preencha as informações solicitadas com entusiasmo.
+4. Preencha as informações solicitadas.
 5. Submeta sua ideia brilhante!
 
 Sua sugestão será analisada e, se aprovada, adicionaremos um card para desenvolvimento. Fique atento a possíveis contatos por comentários na sua issue ou por e-mail!
@@ -47,7 +47,7 @@ Oops! Encontrou um bug? Ajude-nos a corrigi-lo seguindo estes passos:
 
 Após análise, abriremos um card para a solução heroica do problema.
 
-_Obs: Caso voce mesmo queira atuar diretamente pode pular para seção "🤝 Como Contribuir" descrita nesse documento._
+_Obs: Caso você mesmo queira atuar diretamente, pode pular para seção "🤝 Como Contribuir" descrita nesse documento._
 
 ## ❓ Dúvidas ou Ajuda
 
@@ -55,17 +55,17 @@ Precisa de ajuda ou tem uma dúvida? Não se acanhe! 🙋‍♂️
 
 1. Acesse a aba [Discussions](https://github.com/PaoloProdossimoLopes/OurTrip/discussions)
 2. Verifique se sua questão já foi abordada em issues abertas ou fechadas.
-3. Caso nao tenha clique em "New Discussion" para iniciar uma nova discusão.
+3. Caso não tenha, clique em "New Discussion" para iniciar uma nova discussão.
 4. Selecione a categoria "Q&A".
-5. Envie sua duvida para que possamos ajudar!
+5. Envie sua dúvida para podermos ajudar!
 
 Encerre sua discussão após ter sua dúvida esclarecida. Lembre-se: discussões inativas por mais de um mês serão fechadas automaticamente, mas podem ser reabertas se necessário.
 
-_obs: na aba de discussões do repositorio tem varias categorias alem de duvida, aproveite, esses topicos podem te ajudar em algo ou você mesmo pode ajudar outra pessoa_
+_obs: Na aba de discussões do repositório tem várias categorias além de dúvida,  aproveite, esses tópicos podem te ajudar em algo ou você mesmo pode ajudar outra pessoa_
 
 ## 🤝 Como Contribuir
 
-Pronto para colocar a mão na massa? Siga estes passos mágicos:
+Pronto para colocar a mão na massa? Siga estes passos:
 
 1. Faça um [fork do projeto](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks).
 2. Clone o projeto localmente.
@@ -80,12 +80,12 @@ Pronto para colocar a mão na massa? Siga estes passos mágicos:
 
 ## 📜 Licença
 
-Quer saber mais sobre como estamos compartilhando esse tesouro? Confira mais informações sobre a licença no [LICENSE](./../../LICENSE).
+Quer saber mais sobre como estamos compartilhando? Confira mais informações sobre a licença no [LICENSE](./../../LICENSE).
 
 ## Código de Conduta
 
-Levamos muito a sério o nosso [Código de Conduta](./../../CODE_OF_CONDUCT). Comprometemo-nos a proporcionar um ambiente saudável e respeitoso para todos os colaboradores. Acreditamos que um ambiente comunitário positivo é fundamental para fomentar a colaboração e o desenvolvimento contínuo. Encorajamos todos a participar e a contribuir de maneira construtiva.
+Levamos muito a sério o nosso [Código de Conduta](./CODE_OF_CONDUCT). Comprometemo-nos a proporcionar um ambiente saudável e respeitoso para todos os colaboradores. Acreditamos que um ambiente comunitário positivo é fundamental para fomentar a colaboração e o desenvolvimento contínuo. Encorajamos todos a participar e a contribuir de maneira construtiva.
 
 ## 👥 Comunidade
 
-Ficou curioso a respeito da nossa comunidade? acesse nosso [Notion](https://paolo-prodossimo-lopes.notion.site/Swift-Connect-Feed-b2f769f82c524b1e84faa582e4d983e6) e saiba mais!
+Ficou curioso a respeito da nossa comunidade? Acesse nosso [Notion](https://paolo-prodossimo-lopes.notion.site/Swift-Connect-Feed-b2f769f82c524b1e84faa582e4d983e6) e saiba mais!
