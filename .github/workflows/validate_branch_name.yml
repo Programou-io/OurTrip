@@ -14,6 +14,6 @@ jobs:
       - name: Check Branch Name
         run: |
           if [[ ! "$GITHUB_HEAD_REF" =~ ^(feature|bugfix|release|hotfix|docs|refactor|style|perf|test|chore|build|ci)/[a-zA-Z0-9]+([A-Z][a-z0-9]+)*(-[A-Z0-9]+)?$ ]]; then
-            echo "Invalid branch name: $GITHUB_HEAD_REF"
+            echo "❌ Invalid branch name: $GITHUB_HEAD_REF"
             exit 1
           fi
