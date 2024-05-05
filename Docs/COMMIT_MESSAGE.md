@@ -49,4 +49,4 @@ git commit -m "📝 Added translation of the README to Brazilian Portuguese"
 git commit -m "⬆️ Updated the Snapkit version from 'x.x.x' to 'y.y.y'"
 ```
 
-> Tip: If you have difficulty creating messages, consider using an Artificial Intelligence assistant. We provide a [**Prompt**](Docs/PtBr/COMMIT_MESSAGE_AI_PROMPT.md) that can help you request a commit message from AI based on your description.
+> Tip: If you have difficulty creating messages, consider using an Artificial Intelligence assistant. We provide a [**Prompt**](COMMIT_MESSAGE_AI_PROMPT.md) that can help you request a commit message from AI based on your description.

@@ -10,7 +10,7 @@ Nos ajude a divulgar ainda mais esse projeto, para isso, clique no botão "⭐�
 
 ## 🗃️ Leia no seu idioma de preferência
 
-- [🇧🇷 Português (Brasileiro)](./Docs/README.md)
+- [🇧🇷 Português (Brasileiro)](./docs/README.md)
 - [🇺🇸 Ingles (Americano)](./README.md)
 
 Não encontrou seu idioma? Caso queira pode contribuir com o rrepositório adicionando uma tradução para a documentação.
