@@ -16,10 +16,12 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Fetch all history for all tags and branches
+        run: git fetch --no-tags --prune --depth=100 origin +refs/heads/*:refs/remotes/origin/*
+
       - name: Validate Commit Messages
         run: |
-          git fetch --depth=100
-          COMMIT_LOG=$(git log --format="%s" origin/${{ github.base_ref }}..$GITHUB_HEAD_REF)
+          COMMIT_LOG=$(git log --format="%s" origin/${{ github.base_ref }}...$GITHUB_HEAD_REF)
           while IFS= read -r line; do
             if ! [[ $line =~ ^(:[a-z_]+: ) ]]; then
               echo "Commit does not follow gitmoji standard: $line"
@@ -33,7 +35,7 @@ jobs:
 
       - name: Check Commit Authors
         run: |
-          AUTHORS=$(git log origin/${{ github.base_ref }}..$GITHUB_HEAD_REF --pretty=format:"%an <%ae>")
+          AUTHORS=$(git log origin/${{ github.base_ref }}...$GITHUB_HEAD_REF --pretty=format:"%an <%ae>")
           if echo "$AUTHORS" | grep -qP "\b(?:[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})\b"; then
             echo "All authors are correctly configured"
           else
