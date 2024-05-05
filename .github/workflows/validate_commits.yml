@@ -21,7 +21,15 @@ jobs:
 
       - name: Validate Commit Messages
         run: |
-          COMMIT_LOG=$(git log --format="%s" origin/${{ github.base_ref }}...$GITHUB_HEAD_REF)
+          BASE_BRANCH="origin/${{ github.base_ref }}"
+          HEAD_BRANCH="$GITHUB_HEAD_REF"
+          # Check if base branch exists
+          if ! git rev-parse --verify $BASE_BRANCH; then
+            echo "Base branch does not exist: $BASE_BRANCH"
+            exit 1
+          fi
+          # Validate commit messages
+          COMMIT_LOG=$(git log --format="%s" $BASE_BRANCH...$HEAD_BRANCH)
           while IFS= read -r line; do
             if ! [[ $line =~ ^(:[a-z_]+: ) ]]; then
               echo "Commit does not follow gitmoji standard: $line"
@@ -35,7 +43,7 @@ jobs:
 
       - name: Check Commit Authors
         run: |
-          AUTHORS=$(git log origin/${{ github.base_ref }}...$GITHUB_HEAD_REF --pretty=format:"%an <%ae>")
+          AUTHORS=$(git log $BASE_BRANCH...$HEAD_BRANCH --pretty=format:"%an <%ae>")
           if echo "$AUTHORS" | grep -qP "\b(?:[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})\b"; then
             echo "All authors are correctly configured"
           else
