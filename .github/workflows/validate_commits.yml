@@ -1,0 +1,42 @@
+name: Validate Commits
+
+on:
+  pull_request:
+    branches:
+      - main
+      - develop
+    types: [opened, synchronize]
+
+jobs:
+  validate-commits:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Validate Commit Messages
+        run: |
+          git fetch --depth=100
+          COMMIT_LOG=$(git log --format="%s" origin/${{ github.base_ref }}..$GITHUB_HEAD_REF)
+          while IFS= read -r line; do
+            if ! [[ $line =~ ^(:[a-z_]+: ) ]]; then
+              echo "Commit does not follow gitmoji standard: $line"
+              exit 1
+            fi
+            if ! [[ $line =~ [A-Z] ]]; then
+              echo "Commit message is not in English: $line"
+              exit 1
+            fi
+          done <<< "$COMMIT_LOG"
+
+      - name: Check Commit Authors
+        run: |
+          AUTHORS=$(git log origin/${{ github.base_ref }}..$GITHUB_HEAD_REF --pretty=format:"%an <%ae>")
+          if echo "$AUTHORS" | grep -qP "\b(?:[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})\b"; then
+            echo "All authors are correctly configured"
+          else
+            echo "Author information is missing or incorrect in some commits."
+            exit 1
+          fi
