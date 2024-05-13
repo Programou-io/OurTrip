@@ -23,6 +23,40 @@ Não encontrou seu idioma? Caso queira pode contribuir com o rrepositório adici
 
 Sua tradução será analisada e, se aprovada, iremos mergea-la.
 
+## 🧩 Requisitos
+
+- Docker
+- Xcode 15+
+- Swiftlint
+- Tuist
+- Vapor
+
+## 🛤️ Como rodar o projeto
+
+1. Clone o repositorio localmente
+2. Acesse a pasta `OurTrip`
+
+**Frontend**
+
+Para rodar o projeto frontend acesse o cominho `apps/frontend` a partir da raiz e siga os seguintes passos
+
+1. Rode o comando `tuist generate`
+2. Abra o arquivo `Ourtrip.xcworkspace` gerado pelo tuist
+3. Faça o build
+
+Após isso app sera disponibilizado no simulador escolhido
+
+**Backend**
+
+Para rodar o projeto backend acesse o cominho `apps/backend` a partir da raiz e siga os seguintes passos
+
+1. Rode o comando `docker-composer up -d` (pode demorar um pouco)
+1. Rode o comando `swift run App migrate`
+1. Abra o arquivo `Package.swift` com o Xcode
+1. Faça o build da aplicação para subir o servidor local
+
+Após isso app sera disponibilizado na porta 8080
+
 ## 🚀 Como Sugerir uma Melhoria
 
 Quer ajudar a fazer o OurTrip ainda melhor? Siga os passos abaixo para adicionar sua pitada de magia:
@@ -35,7 +69,7 @@ Quer ajudar a fazer o OurTrip ainda melhor? Siga os passos abaixo para adicionar
 
 Sua sugestão será analisada e, se aprovada, adicionaremos um card para desenvolvimento. Fique atento a possíveis contatos por comentários na sua issue ou por e-mail!
 
-## 🐞 Reportar um Problema
+## 🐛 Reportar um Problema
 
 Oops! Encontrou um bug? Ajude-nos a corrigi-lo seguindo estes passos:
 
@@ -61,7 +95,7 @@ Precisa de ajuda ou tem uma dúvida? Não se acanhe! 🙋‍♂️
 
 Encerre sua discussão após ter sua dúvida esclarecida. Lembre-se: discussões inativas por mais de um mês serão fechadas automaticamente, mas podem ser reabertas se necessário.
 
-_obs: Na aba de discussões do repositório tem várias categorias além de dúvida,  aproveite, esses tópicos podem te ajudar em algo ou você mesmo pode ajudar outra pessoa_
+_obs: Na aba de discussões do repositório tem várias categorias além de dúvida, aproveite, esses tópicos podem te ajudar em algo ou você mesmo pode ajudar outra pessoa_
 
 ## 🤝 Como Contribuir
 
@@ -82,13 +116,9 @@ Pronto para colocar a mão na massa? Siga estes passos:
 
 Quer saber mais sobre como estamos compartilhando? Confira mais informações sobre a licença no [LICENSE](./../../LICENSE).
 
-## Código de Conduta
+## ✌🏼 Código de Conduta
 
 Levamos muito a sério o nosso [Código de Conduta](./CODE_OF_CONDUCT). Comprometemo-nos a proporcionar um ambiente saudável e respeitoso para todos os colaboradores. Acreditamos que um ambiente comunitário positivo é fundamental para fomentar a colaboração e o desenvolvimento contínuo. Encorajamos todos a participar e a contribuir de maneira construtiva.
-
-## Código de Conduta
-
-Levamos muito a sério o nosso [Código de Conduta](./../../CODE_OF_CONDUCT). Comprometemo-nos a proporcionar um ambiente saudável e respeitoso para todos os colaboradores. Acreditamos que um ambiente comunitário positivo é fundamental para fomentar a colaboração e o desenvolvimento contínuo. Encorajamos todos a participar e a contribuir de maneira construtiva.
 
 ## 👥 Comunidade
 
