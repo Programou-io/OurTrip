@@ -15,17 +15,22 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
       - name: Install gitmoji-cli
         run: npm install -g gitmoji-cli
 
       - name: Validate commits
         run: |
-          # Check each commit for the required standards
+          # Fetch the commit range
           commits=$(git log --format="%H" ${{ github.event.before }}..${{ github.sha }})
           for commit in $commits; do
             # Check if commit message is in English
             message=$(git log --format="%s" -n 1 $commit)
-            if ! echo $message | grep -qP "^[a-zA-Z0-9 ,.!?'\"]+$"; then
+            if ! echo "$message" | grep -qP "^[a-zA-Z0-9 ,.!?'\"]+$"; then
               echo "❌ Commit (hash) $commit does not contain only English characters"
               exit 1
             fi
@@ -39,7 +44,7 @@ jobs:
             fi
 
             # Check for gitmoji pattern
-            if ! echo $message | gitmoji -c | grep -q "^:.*: "; then
+            if ! echo "$message" | gitmoji -c | grep -q "^:.*: "; then
               echo "❌ Commit (hash) $commit does not follow the gitmoji pattern"
               exit 1
             fi
