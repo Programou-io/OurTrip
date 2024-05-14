@@ -35,27 +35,7 @@ Sua tradução será analisada e, se aprovada, iremos mergea-la.
 
 1. Clone o repositorio localmente
 2. Acesse a pasta `OurTrip`
-
-**Frontend**
-
-Para rodar o projeto frontend acesse o cominho `apps/frontend` a partir da raiz e siga os seguintes passos
-
-1. Rode o comando `tuist generate`
-2. Abra o arquivo `Ourtrip.xcworkspace` gerado pelo tuist
-3. Faça o build
-
-Após isso app sera disponibilizado no simulador escolhido
-
-**Backend**
-
-Para rodar o projeto backend acesse o cominho `apps/backend` a partir da raiz e siga os seguintes passos
-
-1. Rode o comando `docker-composer up -d` (pode demorar um pouco)
-1. Rode o comando `swift run App migrate`
-1. Abra o arquivo `Package.swift` com o Xcode
-1. Faça o build da aplicação para subir o servidor local
-
-Após isso app sera disponibilizado na porta 8080
+3. Rode o comando `make build`
 
 ## 🚀 Como Sugerir uma Melhoria
 
