@@ -1,0 +1,2 @@
+build:
+	tuist generate

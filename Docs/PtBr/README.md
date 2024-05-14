@@ -10,7 +10,7 @@ Nos ajude a divulgar ainda mais esse projeto, para isso, clique no botão "⭐�
 
 ## 🗃️ Leia no seu idioma de preferência
 
-- [🇧🇷 Português (Brasileiro)](./Docs/README.md)
+- [🇧🇷 Português (Brasileiro)](./docs/README.md)
 - [🇺🇸 Ingles (Americano)](./README.md)
 
 Não encontrou seu idioma? Caso queira pode contribuir com o rrepositório adicionando uma tradução para a documentação.
@@ -22,6 +22,20 @@ Não encontrou seu idioma? Caso queira pode contribuir com o rrepositório adici
 5. Submeta sua tradução!
 
 Sua tradução será analisada e, se aprovada, iremos mergea-la.
+
+## 🧩 Requisitos
+
+- Docker
+- Xcode 15+
+- Swiftlint
+- Tuist
+- Vapor
+
+## 🛤️ Como rodar o projeto
+
+1. Clone o repositorio localmente
+2. Acesse a pasta `OurTrip`
+3. Rode o comando `make build`
 
 ## 🚀 Como Sugerir uma Melhoria
 
@@ -35,7 +49,7 @@ Quer ajudar a fazer o OurTrip ainda melhor? Siga os passos abaixo para adicionar
 
 Sua sugestão será analisada e, se aprovada, adicionaremos um card para desenvolvimento. Fique atento a possíveis contatos por comentários na sua issue ou por e-mail!
 
-## 🐞 Reportar um Problema
+## 🐛 Reportar um Problema
 
 Oops! Encontrou um bug? Ajude-nos a corrigi-lo seguindo estes passos:
 
@@ -61,7 +75,7 @@ Precisa de ajuda ou tem uma dúvida? Não se acanhe! 🙋‍♂️
 
 Encerre sua discussão após ter sua dúvida esclarecida. Lembre-se: discussões inativas por mais de um mês serão fechadas automaticamente, mas podem ser reabertas se necessário.
 
-_obs: Na aba de discussões do repositório tem várias categorias além de dúvida,  aproveite, esses tópicos podem te ajudar em algo ou você mesmo pode ajudar outra pessoa_
+_obs: Na aba de discussões do repositório tem várias categorias além de dúvida, aproveite, esses tópicos podem te ajudar em algo ou você mesmo pode ajudar outra pessoa_
 
 ## 🤝 Como Contribuir
 
@@ -82,13 +96,9 @@ Pronto para colocar a mão na massa? Siga estes passos:
 
 Quer saber mais sobre como estamos compartilhando? Confira mais informações sobre a licença no [LICENSE](./../../LICENSE).
 
-## Código de Conduta
+## ✌🏼 Código de Conduta
 
 Levamos muito a sério o nosso [Código de Conduta](./CODE_OF_CONDUCT). Comprometemo-nos a proporcionar um ambiente saudável e respeitoso para todos os colaboradores. Acreditamos que um ambiente comunitário positivo é fundamental para fomentar a colaboração e o desenvolvimento contínuo. Encorajamos todos a participar e a contribuir de maneira construtiva.
-
-## Código de Conduta
-
-Levamos muito a sério o nosso [Código de Conduta](./../../CODE_OF_CONDUCT). Comprometemo-nos a proporcionar um ambiente saudável e respeitoso para todos os colaboradores. Acreditamos que um ambiente comunitário positivo é fundamental para fomentar a colaboração e o desenvolvimento contínuo. Encorajamos todos a participar e a contribuir de maneira construtiva.
 
 ## 👥 Comunidade
 

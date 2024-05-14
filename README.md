@@ -23,6 +23,14 @@ Can't find your language? If you'd like, you can contribute to the repository by
 
 Your translation will be reviewed and, if approved, we will merge it.
 
+## 🧩 Requirements
+
+- Docker
+- Xcode 15+
+- Swiftlint
+- Tuist
+- Vapor
+
 ## 🚀 How to Suggest an Improvement
 
 Want to help make OurTrip even better? Follow the steps below to add your touch of magic:
@@ -35,7 +43,13 @@ Want to help make OurTrip even better? Follow the steps below to add your touch 
 
 Your suggestion will be reviewed and, if approved, we will add a card for development. Stay alert for possible contacts through comments on your issue or via email!
 
-## 🐞 Report a Problem
+## 🛤️ How to Run the Project
+
+1. Clone the repository locally
+2. Navigate to the `OurTrip` folder
+3. Run the command `make build`
+
+## 🐛 Report a Problem
 
 Oops! Found a bug? Help us fix it by following these steps:
 
@@ -82,7 +96,7 @@ Ready to get your hands dirty? Follow these magical steps:
 
 Want to know more about how we're sharing this treasure? Check out more information about the license in [LICENSE](./LICENSE).
 
-## Code of Conduct
+## ✌🏼 Code of Conduct
 
 We take our [Code of Conduct](./CODE_OF_CONDUCT) very seriously. We are committed to providing a healthy and respectful environment for all contributors. We believe that a positive community atmosphere is crucial for fostering collaboration and continuous development. We encourage everyone to participate and contribute constructively.
 
