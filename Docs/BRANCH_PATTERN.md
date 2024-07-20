@@ -1,42 +1,42 @@
-# Branch Pattern
+# Padrão de Branch
 
-Implementing a standard for branch names is crucial to ensure they are descriptive and easy to identify. Additionally, following the defined pattern automatically organizes the branches into a folder structure in Git management tools like Sourcetree, Kaleidoscope, and GitKraken.
+A implementação de um padrão para nomes de branches é crucial para garantir que sejam descritivas e fáceis de identificar. Além disso, ao seguir o padrão definido, as branches são automaticamente organizadas em uma estrutura de pastas em ferramentas de gestão de Git, como Sourcetree, Kaleidoscope e GitKraken.
 
-## Pattern
+## Padrão
 
 ```sh
-git branch {type}/{short-description}-{identifier (optional)}
+git branch {tipo}/{descricao-curta}-{identificador (opcional)}
 ```
 
-### Components:
+### Componentes:
 
-- **Type**: Identifies the purpose of the branch. Examples include:
+- **Tipo**: Identifica o propósito da branch. Exemplos incluem:
 
-  - `feature`: For new functionalities.
-  - `bugfix`: For bug corrections.
-  - `hotfix`: For urgent corrections to be applied directly in production.
-  - `docs`: For adding or updating documentation.
-  - `release`: For preparing new releases.
-  - `refactor`: Refactoring existing code, without adding functionalities or correcting bugs.
-  - `style`: Changes that do not affect the meaning of the code (white space, formatting, punctuation, etc).
-  - `perf`: Performance improvements that do not alter the code behavior.
-  - `test`: Adding or correcting existing tests.
-  - `chore`: Routine task updates and maintenance that do not modify the source code or tests.
-  - `build`: Changes that affect the build system or external dependencies.
-  - `ci`: Changes in the files and scripts of continuous integration (CI) configuration.
+  - `feature`: Para novas funcionalidades.
+  - `bugfix`: Para correções de bugs.
+  - `hotfix`: Para correções urgentes a serem aplicadas diretamente em produção.
+  - `docs`: Para adicionar ou atualizar documentação.
+  - `release`: Para preparar novas versões.
+  - `refactor`: Refatoração de código existente, sem adicionar funcionalidades ou corrigir bugs.
+  - `style`: Mudanças que não afetam o significado do código (espaço em branco, formatação, pontuação, etc).
+  - `perf`: Melhorias de desempenho que não alteram o comportamento do código.
+  - `test`: Adição ou correção de testes existentes.
+  - `chore`: Atualizações de tarefas rotineiras e manutenção que não modificam o código-fonte ou os testes.
+  - `build`: Alterações que afetam o sistema de build ou dependências externas.
+  - `ci`: Alterações nos arquivos e scripts de configuração de integração contínua (CI).
 
-- **Short Description**: A concise description of the branch's purpose. It should be clear enough for any team member to understand the objective of the branch at a quick glance.
+- **Descrição Curta**: Uma descrição concisa do propósito da branch. Deve ser clara o suficiente para que qualquer membro da equipe compreenda o objetivo da branch com uma rápida análise.
 
-  - Use the camelCase pattern for the description.
-  - Keep the description simple and straightforward.
+  - Utilize o padrão camelCase para a descrição.
+  - Mantenha a descrição simples e objetiva.
 
-- **Identifier (optional)**: A unique code or number, usually linked to a ticket in the issue tracking system, such as JIRA or GitHub Issues. This facilitates a direct link between the branch and a specific requirement or issue.
+- **Identificador (opcional)**: Um código ou número único, geralmente vinculado a um ticket no sistema de rastreamento de issues, como JIRA ou GitHub Issues. Isso facilita a ligação direta da branch a um requisito ou problema específico.
 
-### Notes:
+### Observações:
 
-- Branch names should be created in **English** to maintain linguistic consistency across the project.
+- Os nomes das branches devem ser criados em **inglês** para manter a consistência linguística do projeto.
 
-### Examples:
+### Exemplos:
 
 - `bugfix/loginEmailValidation`
 - `feature/searchUserInCommunity-2342`

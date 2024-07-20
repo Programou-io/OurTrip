@@ -1,29 +1,29 @@
-# 🌍 OurTrip: Shared Travel Planning
+# 🌍 OurTrip: Planejamento de Viagens Compartilhado
 
-This app makes planning and organizing trips for groups easier. With OurTrip, planning your next group adventure is easier and more interactive!
+Este aplicativo facilita o planejamento e a organização de viagens para grupos. Com OurTrip, planejar sua próxima aventura em grupo fica mais fácil e interativo!
 
-## 🌟 Motivation
+## 🌟 Motivação
 
-OurTrip is an open source project developed by the vibrant SwiftConnect community. Our goal is to provide developers with the experience of contributing to a significant project, developing their skills in a collaborative and fun environment!
+OurTrip é um projeto open source desenvolvido pela comunidade SwiftConnect. Nosso objetivo é oferecer aos desenvolvedores a experiência de contribuir em um projeto significativo, desenvolvendo suas habilidades em um ambiente colaborativo e divertido!
 
-Help us spread the word about this amazing project! Click the '⭐️ Star' button in the upper right corner of the browser to help the repository rank better. If possible, share it 😉
+Nos ajude a divulgar ainda mais esse projeto, para isso, clique no botão "⭐️ Star" no canto superior direito do navegador para ajudar o repositório a ser melhor rankeado. Se possível compartilhe 😉
 
-## 🗃️ Read in Your Preferred Language
+## 🗃️ Leia no seu idioma de preferência
 
-- [🇧🇷 Portuguese (Brazilian)](./Docs/PtBr/README.md)
-- [🇺🇸 English (American)](./README.md)
+- [🇧🇷 Português (Brasileiro)](./docs/README.md)
+- [🇺🇸 Ingles (Americano)](./README.md)
 
-Can't find your language? If you'd like, you can contribute to the repository by adding a translation for the documentation.
+Não encontrou seu idioma? Caso queira pode contribuir com o rrepositório adicionando uma tradução para a documentação.
 
-1. Visit the [repository's issues tab](https://github.com/PaoloProdossimoLopes/OurTrip/issues).
-2. Click on "New issue".
-3. Select the template "💬 Suggest new feature".
-4. Fill in the requested information with enthusiasm.
-5. Submit your translation!
+1. Acesse a aba [Issues do repositório](https://github.com/PaoloProdossimoLopes/OurTrip/issues).
+2. Clique em "New issue".
+3. Selecione o modelo "💬 Sugerir nova funcionalidade".
+4. Preencha as informações solicitadas com as suas ideias.
+5. Submeta sua tradução!
 
-Your translation will be reviewed and, if approved, we will merge it.
+Sua tradução será analisada e, se aprovada, iremos mergea-la.
 
-## 🧩 Requirements
+## 🧩 Requisitos
 
 - Docker
 - Xcode 15+
@@ -31,75 +31,75 @@ Your translation will be reviewed and, if approved, we will merge it.
 - Tuist
 - Vapor
 
-## 🚀 How to Suggest an Improvement
+## 🛤️ Como rodar o projeto
 
-Want to help make OurTrip even better? Follow the steps below to add your touch of magic:
+1. Clone o repositorio localmente
+2. Acesse a pasta `OurTrip`
+3. Rode o comando `make build`
 
-1. Visit the [repository's issues tab](https://github.com/PaoloProdossimoLopes/OurTrip/issues).
-2. Click on "New issue".
-3. Select the template "✨ Suggest new feature".
-4. Fill in the requested information with enthusiasm.
-5. Submit your brilliant idea!
+## 🚀 Como Sugerir uma Melhoria
 
-Your suggestion will be reviewed and, if approved, we will add a card for development. Stay alert for possible contacts through comments on your issue or via email!
+Quer ajudar a fazer o OurTrip ainda melhor? Siga os passos abaixo para adicionar sua pitada de magia:
 
-## 🛤️ How to Run the Project
+1. Acesse a aba [Issues do repositório](https://github.com/PaoloProdossimoLopes/OurTrip/issues).
+2. Clique em "New issue".
+3. Selecione o modelo "✨ Sugerir nova funcionalidade".
+4. Preencha as informações solicitadas.
+5. Submeta sua ideia brilhante!
 
-1. Clone the repository locally
-2. Navigate to the `OurTrip` folder
-3. Run the command `make build`
+Sua sugestão será analisada e, se aprovada, adicionaremos um card para desenvolvimento. Fique atento a possíveis contatos por comentários na sua issue ou por e-mail!
 
-## 🐛 Report a Problem
+## 🐛 Reportar um Problema
 
-Oops! Found a bug? Help us fix it by following these steps:
+Oops! Encontrou um bug? Ajude-nos a corrigi-lo seguindo estes passos:
 
-1. Visit the [repository's issues tab](https://github.com/PaoloProdossimoLopes/OurTrip/issues).
-2. Click on "New issue".
-3. Select the template "🐛 Report a problem".
-4. Fill in the requested information.
-5. Send your request to save the day!
+1. Acesse a aba [Issues do repositório](https://github.com/PaoloProdossimoLopes/OurTrip/issues).
+2. Clique em "New issue".
+3. Selecione o modelo "🐛 Reportar um problema".
+4. Preencha as informações solicitadas.
+5. Envie sua solicitação para salvar o dia!
 
-After review, we will open a card for the heroic solution of the problem.
+Após análise, abriremos um card para a solução heroica do problema.
 
-_Note: If you want to act directly, you can skip to the "🤝 How to Contribute" section described in this document._
+_Obs: Caso você mesmo queira atuar diretamente, pode pular para seção "🤝 Como Contribuir" descrita nesse documento._
 
-## ❓ Questions or Help
+## ❓ Dúvidas ou Ajuda
 
-Need help or have a question? Don't be shy! 🙋‍♂️
+Precisa de ajuda ou tem uma dúvida? Não se acanhe! 🙋‍♂️
 
-1. Go to the [Discussions](https://github.com/PaoloProdossimoLopes/OurTrip/discussions) tab.
-2. Check if your question has already been addressed in open or closed issues.
-3. If not, click on "New Discussion" to start a new discussion.
-4. Select the "Q&A" category.
-5. Post your question so we can help!
+1. Acesse a aba [Discussions](https://github.com/PaoloProdossimoLopes/OurTrip/discussions)
+2. Verifique se sua questão já foi abordada em issues abertas ou fechadas.
+3. Caso não tenha, clique em "New Discussion" para iniciar uma nova discussão.
+4. Selecione a categoria "Q&A".
+5. Envie sua dúvida para podermos ajudar!
 
-Close your discussion after your question has been answered. Remember: discussions that remain inactive for more than a month will be automatically closed, but can be reopened if necessary.
+Encerre sua discussão após ter sua dúvida esclarecida. Lembre-se: discussões inativas por mais de um mês serão fechadas automaticamente, mas podem ser reabertas se necessário.
 
-_Note: the discussions tab in the repository has several categories besides questions, take advantage of this, these topics might help you or you might be able to help someone else._
+_obs: Na aba de discussões do repositório tem várias categorias além de dúvida, aproveite, esses tópicos podem te ajudar em algo ou você mesmo pode ajudar outra pessoa_
 
-## 🤝 How to Contribute
+## 🤝 Como Contribuir
 
-Ready to get your hands dirty? Follow these magical steps:
+Pronto para colocar a mão na massa? Siga estes passos:
 
-1. Make a [fork of the project](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks).
-2. Clone the project locally.
-3. Create your branch following our standard in [BRANCH_PATTERN.md](./Docs/BRANCH_PATTERN.md).
-4. Implement your changes.
-5. Commit your changes following our convention in [COMMIT_MESSAGE.md](./Docs/COMMIT_MESSAGE.md).
-6. Push your implementation to your remote repository.
-7. Open a pull request using our template.
-8. Properly fill out the pull request.
+1. Faça um [fork do projeto](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks).
+2. Clone o projeto localmente.
+3. Crie sua branch seguindo nosso padrão em [BRANCH_PATTERN.md](./BRANCH_PATTERN.md).
+4. Implemente suas alterações.
+5. Realize o commit conforme nossa convenção em [COMMIT_MESSAGE.md](./COMMIT_MESSAGE.md).
+6. Faça um push para seu repositório remoto.
+7. Abra um pull request conforme nosso template.
+8. Preencha adequadamente o pull request.
 
-🛠 Pull requests must pass CI before review. Approval requires at least two reviewers: an experienced contributor and a repository administrator.
+🛠 Pull requests devem passar pela CI antes da revisão. A aprovação requer no mínimo dois revisores: um contribuidor experiente e um administrador do repositório.
 
-## 📜 License
+## 📜 Licença
 
-Want to know more about how we're sharing this treasure? Check out more information about the license in [LICENSE](./LICENSE).
+Quer saber mais sobre como estamos compartilhando? Confira mais informações sobre a licença no [LICENSE](./../../LICENSE).
 
-## ✌🏼 Code of Conduct
+## ✌🏼 Código de Conduta
 
-We take our [Code of Conduct](./CODE_OF_CONDUCT) very seriously. We are committed to providing a healthy and respectful environment for all contributors. We believe that a positive community atmosphere is crucial for fostering collaboration and continuous development. We encourage everyone to participate and contribute constructively.
+Levamos muito a sério o nosso [Código de Conduta](./CODE_OF_CONDUCT). Comprometemo-nos a proporcionar um ambiente saudável e respeitoso para todos os colaboradores. Acreditamos que um ambiente comunitário positivo é fundamental para fomentar a colaboração e o desenvolvimento contínuo. Encorajamos todos a participar e a contribuir de maneira construtiva.
 
-## 👥 Community
+## 👥 Comunidade
 
-Curious about our community? Visit our [Notion](https://paolo-prodossimo-lopes.notion.site/Swift-Connect-Feed-b2f769f82c524b1e84faa582e4d983e6) page to learn more!
+Ficou curioso a respeito da nossa comunidade? Acesse nosso [Notion](https://paolo-prodossimo-lopes.notion.site/Swift-Connect-Feed-b2f769f82c524b1e84faa582e4d983e6) e saiba mais!

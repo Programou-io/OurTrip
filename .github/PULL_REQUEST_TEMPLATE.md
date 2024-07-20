@@ -1,31 +1,28 @@
-## Description
+## 📝 Descrição
 
-_Replace to brief description of the changes proposed in this pull request. Include the necessary context to understand what these changes aim to achieve._
+_Substitua por uma breve descrição das alterações propostas neste pull request. Inclua o contexto necessário para entender o que essas alterações visam alcançar._
 
-## Type of Change
+## 🚀 Tipo de Alteração
 
-- [ ] Bug fix (a fix that does not break other functionalities)
-- [ ] New feature (a change that adds functionality)
-- [ ] Breaking change (a fix or feature that would cause existing functionality to change)
-- [ ] This change requires a documentation update
+- [ ] Correção de bug
+- [ ] Nova funcionalidade
+- [ ] Mudança significativa
+- [ ] Atualização de documentação
 
-## How was it tested?
+## 🧪 Como foi testado?
 
-_Replace to describe the tests you performed to verify your changes. Provide instructions so we can reproduce the tests. List all relevant details for your tests._
+_Substitua para descrever os testes realizados para verificar suas alterações. Forneça instruções para que possamos reproduzir os testes._
 
-## Checklist:
+## ✅ Checklist
 
-Before submitting your pull request, please review the list below and mark with an `x` all relevant points:
+- [ ] Minha branch está atualizada com a branch `develop`
+- [ ] Adicionei testes que provam que minha correção é eficaz ou que minha funcionalidade funciona
+- [ ] Testes unitários novos e existentes passam localmente com minhas alterações
 
-- [ ] My branch is up-to-date with the `develop` branch
-- [ ] I have added tests that prove my fix is effective or that my feature works (if there is a code change)
-- [ ] New and existing unit tests pass locally with my changes
-- [ ] I have checked that my change does not violate any dependencies
+## 📸 Capturas de Tela (se aplicável)
 
-## Screenshots (if applicable)
+_Substitua para incluir capturas de tela que ajudem a visualizar as alterações._
 
-_Replace to include screenshots here that help visualize the changes (optional)._
+## ℹ️ Outras Informações
 
-## Other Information
-
-_Replace to add any other information that helps understand the pull request._
+_Substitua para adicionar qualquer outra informação que ajude a entender o pull request._
