@@ -11,7 +11,7 @@ struct TodoController: RouteCollection {
             todo.delete(use: { try await self.delete(req: $0) })
         }
     }
-    
+
     func index(req: Request) async throws -> [Todo] {
         try await Todo.query(on: req.db).all()
     }

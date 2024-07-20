@@ -10,7 +10,7 @@ let project = Project(
             bundleId: "io.programou.Frontend",
             infoPlist: .extendingDefault(
                 with: [
-                    "UILaunchStoryboardName": "LaunchScreen.storyboard",
+                    "UILaunchStoryboardName": "LaunchScreen.storyboard"
                 ]
             ),
             sources: ["Sources/**"],
@@ -26,6 +26,6 @@ let project = Project(
             sources: ["Tests/**"],
             resources: [],
             dependencies: [.target(name: "Frontend")]
-        ),
+        )
     ]
 )

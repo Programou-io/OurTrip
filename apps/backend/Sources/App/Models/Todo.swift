@@ -6,7 +6,7 @@ import Vapor
 /// afterwards with `@unchecked Sendable`.
 final class Todo: Model, Content, @unchecked Sendable {
     static let schema = "todos"
-    
+
     @ID(key: .id)
     var id: UUID?
 

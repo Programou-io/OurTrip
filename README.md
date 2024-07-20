@@ -8,29 +8,6 @@ OurTrip é um projeto open source desenvolvido pela comunidade SwiftConnect. Nos
 
 Nos ajude a divulgar ainda mais esse projeto, para isso, clique no botão "⭐️ Star" no canto superior direito do navegador para ajudar o repositório a ser melhor rankeado. Se possível compartilhe 😉
 
-## 🗃️ Leia no seu idioma de preferência
-
-- [🇧🇷 Português (Brasileiro)](./docs/README.md)
-- [🇺🇸 Ingles (Americano)](./README.md)
-
-Não encontrou seu idioma? Caso queira pode contribuir com o rrepositório adicionando uma tradução para a documentação.
-
-1. Acesse a aba [Issues do repositório](https://github.com/PaoloProdossimoLopes/OurTrip/issues).
-2. Clique em "New issue".
-3. Selecione o modelo "💬 Sugerir nova funcionalidade".
-4. Preencha as informações solicitadas com as suas ideias.
-5. Submeta sua tradução!
-
-Sua tradução será analisada e, se aprovada, iremos mergea-la.
-
-## 🧩 Requisitos
-
-- Docker
-- Xcode 15+
-- Swiftlint
-- Tuist
-- Vapor
-
 ## 🛤️ Como rodar o projeto
 
 1. Clone o repositorio localmente
@@ -83,9 +60,9 @@ Pronto para colocar a mão na massa? Siga estes passos:
 
 1. Faça um [fork do projeto](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks).
 2. Clone o projeto localmente.
-3. Crie sua branch seguindo nosso padrão em [BRANCH_PATTERN.md](./BRANCH_PATTERN.md).
+3. Crie sua branch seguindo nosso padrão em [BRANCH_PATTERN.md](./docs/BRANCH_PATTERN.md).
 4. Implemente suas alterações.
-5. Realize o commit conforme nossa convenção em [COMMIT_MESSAGE.md](./COMMIT_MESSAGE.md).
+5. Realize o commit conforme nossa convenção em [COMMIT_MESSAGE.md](./docs/COMMIT_MESSAGE.md).
 6. Faça um push para seu repositório remoto.
 7. Abra um pull request conforme nosso template.
 8. Preencha adequadamente o pull request.
@@ -94,7 +71,7 @@ Pronto para colocar a mão na massa? Siga estes passos:
 
 ## 📜 Licença
 
-Quer saber mais sobre como estamos compartilhando? Confira mais informações sobre a licença no [LICENSE](./../../LICENSE).
+Quer saber mais sobre como estamos compartilhando? Confira mais informações sobre a licença no [LICENSE](./LICENSE).
 
 ## ✌🏼 Código de Conduta
 
@@ -102,4 +79,4 @@ Levamos muito a sério o nosso [Código de Conduta](./CODE_OF_CONDUCT). Comprome
 
 ## 👥 Comunidade
 
-Ficou curioso a respeito da nossa comunidade? Acesse nosso [Notion](https://paolo-prodossimo-lopes.notion.site/Swift-Connect-Feed-b2f769f82c524b1e84faa582e4d983e6) e saiba mais!
+Ficou curioso a respeito da nossa comunidade? Acesse [site](https://programou.io) e saiba mais!
