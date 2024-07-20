@@ -33,7 +33,7 @@ Precisa de ajuda ou tem uma dúvida? Não se acanhe! 🙋‍♂️
 1. Acesse a aba [Discussions](https://github.com/PaoloProdossimoLopes/OurTrip/discussions)
 2. Verifique se sua questão já foi abordada em issues abertas ou fechadas.
 3. Caso não tenha, clique em "New Discussion" para iniciar uma nova discussão.
-4. Selecione a categoria "Q&A".
+4. Selecione a categoria "Perguntas e Respostas".
 5. Envie sua dúvida para podermos ajudar!
 
 Encerre sua discussão após ter sua dúvida esclarecida. Lembre-se: discussões inativas por mais de um mês serão fechadas automaticamente, mas podem ser reabertas se necessário.
