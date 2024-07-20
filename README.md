@@ -19,26 +19,12 @@ Nos ajude a divulgar ainda mais esse projeto, para isso, clique no botão "⭐�
 Quer ajudar a fazer o OurTrip ainda melhor? Siga os passos abaixo para adicionar sua pitada de magia:
 
 1. Acesse a aba [Issues do repositório](https://github.com/PaoloProdossimoLopes/OurTrip/issues).
-2. Clique em "New issue".
-3. Selecione o modelo "✨ Sugerir nova funcionalidade".
-4. Preencha as informações solicitadas.
-5. Submeta sua ideia brilhante!
+2. Clique em "Discussions".
+3. Crie uma nova descrição para a aba "💡 Ideias".
+4. Descreva as informações.
+5. Submeta sua ideia brilhante! e converse com a comunidade para refinar a ideia.
 
 Sua sugestão será analisada e, se aprovada, adicionaremos um card para desenvolvimento. Fique atento a possíveis contatos por comentários na sua issue ou por e-mail!
-
-## 🐛 Reportar um Problema
-
-Oops! Encontrou um bug? Ajude-nos a corrigi-lo seguindo estes passos:
-
-1. Acesse a aba [Issues do repositório](https://github.com/PaoloProdossimoLopes/OurTrip/issues).
-2. Clique em "New issue".
-3. Selecione o modelo "🐛 Reportar um problema".
-4. Preencha as informações solicitadas.
-5. Envie sua solicitação para salvar o dia!
-
-Após análise, abriremos um card para a solução heroica do problema.
-
-_Obs: Caso você mesmo queira atuar diretamente, pode pular para seção "🤝 Como Contribuir" descrita nesse documento._
 
 ## ❓ Dúvidas ou Ajuda
 
