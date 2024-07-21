@@ -8,11 +8,24 @@ OurTrip é um projeto open source desenvolvido pela comunidade SwiftConnect. Nos
 
 Nos ajude a divulgar ainda mais esse projeto, para isso, clique no botão "⭐️ Star" no canto superior direito do navegador para ajudar o repositório a ser melhor rankeado. Se possível compartilhe 😉
 
+## 📋 Requisitos para rodar
+
+- Xcode 15+
+- Swift 5.9+
+- Vapor 4+
+- SwiftLint
+- Docker
+- Make
+
 ## 🛤️ Como rodar o projeto
 
 1. Clone o repositorio localmente
 2. Acesse a pasta `OurTrip`
 3. Rode o comando `make build`
+
+_Obs: caso queira testar as rotas de backend pode usar a collection diponibilizada a seguir clicando o botao do insomnia_
+
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=OurTripApi&uri=https%3A%2F%2Fgithub.com%2FPaoloProdossimoLopes%2FOurTrip%2Fblob%2Fmain%2Four-trip-insomnia-collection.json)
 
 ## 🚀 Como Sugerir uma Melhoria
 
