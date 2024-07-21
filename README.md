@@ -23,7 +23,7 @@ Nos ajude a divulgar ainda mais esse projeto, para isso, clique no botão "⭐�
 2. Acesse a pasta `OurTrip`
 3. Rode o comando `make build`
 
-_Obs: caso queira testar as rotas de backend pode usar a collection diponibilizada a seguir clicando o botao do insomnia_
+_Obs: caso queira testar as rotas de backend pode usar a collection diponibilizada a seguir clicando no botao do insomnia para baixar os dados
 
 [![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=OurTripApi&uri=https%3A%2F%2Fgithub.com%2FPaoloProdossimoLopes%2FOurTrip%2Fblob%2Fmain%2Four-trip-insomnia-collection.json)
 
