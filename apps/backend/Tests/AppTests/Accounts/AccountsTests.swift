@@ -18,7 +18,7 @@ final class AccountsTests: XCTestCase {
     }
     
     func testCreateAccountWithValidCredentialsReturnsCreatedStatus() async throws {
-        let newAccount = makeAccount()
+        let newAccount = makeCreateAccountRequestModel()
         try await app.test(.POST, "accounts", beforeRequest: { req async throws in
             try req.content.encode(CreateAccountRequest(name: newAccount.name, email: newAccount.email, password: newAccount.password))
         }, afterResponse: { res in
@@ -30,7 +30,7 @@ final class AccountsTests: XCTestCase {
     }
     
     func testCreateAccountWithInvalidNameReturnsBadRequest() async throws {
-        let invalidAccount = makeAccount(name: "a")
+        let invalidAccount = makeCreateAccountRequestModel(name: "a")
         try await app.test(.POST, "accounts", beforeRequest: { req async throws in
             try req.content.encode(CreateAccountRequest(name: invalidAccount.name, email: invalidAccount.email, password: invalidAccount.password))
         }, afterResponse: { res in
@@ -42,7 +42,7 @@ final class AccountsTests: XCTestCase {
     }
     
     func testCreateAccountWithInvalidEmailFormatReturnsBadRequest() async throws {
-        let invalidAccount = makeAccount(email: "invalid email")
+        let invalidAccount = makeCreateAccountRequestModel(email: "invalid email")
         try await app.test(.POST, "accounts", beforeRequest: { req async throws in
             try req.content.encode(CreateAccountRequest(name: invalidAccount.name, email: invalidAccount.email, password: invalidAccount.password))
         }, afterResponse: { res in
@@ -54,7 +54,7 @@ final class AccountsTests: XCTestCase {
     }
     
     func testCreateAccountWithInvalidPasswordFormatReturnsBadRequest() async throws {
-        let invalidAccount = makeAccount(password: "invalid password")
+        let invalidAccount = makeCreateAccountRequestModel(password: "invalid password")
         try await app.test(.POST, "accounts", beforeRequest: { req async throws in
             try req.content.encode(CreateAccountRequest(name: invalidAccount.name, email: invalidAccount.email, password: invalidAccount.password))
         }, afterResponse: { res in
@@ -82,10 +82,10 @@ final class AccountsTests: XCTestCase {
     }
     
     func testFetchAllAccountsWithValidTokenReturnsAccounts() async throws {
-        let account = makeAccount()
+        let account = makeCreateAccountRequestModel()
         try await performRequestToCreateNewAccount(account: account)
-        try await performRequestToCreateNewAccount(account: makeAccount())
-        try await performRequestToCreateNewAccount(account: makeAccount())
+        try await performRequestToCreateNewAccount(account: makeCreateAccountRequestModel())
+        try await performRequestToCreateNewAccount(account: makeCreateAccountRequestModel())
         
         let authResponse = try await performRequestToAuthenticateWith(account: account)
         
@@ -107,10 +107,10 @@ final class AccountsTests: XCTestCase {
     }
     
     func testRetrieveAccountWithValidTokenButUnauthorizedIdReturnsUnauthorized() async throws {
-        let account = makeAccount()
+        let account = makeCreateAccountRequestModel()
         try await performRequestToCreateNewAccount(account: account)
         var otherAccount: CreateAccountResponse!
-        otherAccount = try await performRequestToCreateNewAccount(account: makeAccount())
+        otherAccount = try await performRequestToCreateNewAccount(account: makeCreateAccountRequestModel())
         
         let authResponse = try await performRequestToAuthenticateWith(account: account)
         
@@ -124,7 +124,7 @@ final class AccountsTests: XCTestCase {
     }
     
     func testRetrieveAccountWithValidTokenAndValidIdReturnsAccount() async throws {
-        let account = makeAccount()
+        let account = makeCreateAccountRequestModel()
         let createdAccount = try await performRequestToCreateNewAccount(account: account)
         
         let authResponse = try await performRequestToAuthenticateWith(account: account)
@@ -132,7 +132,7 @@ final class AccountsTests: XCTestCase {
         let headers = HTTPHeaders([makeAuthorizationHeader(authentication: authResponse)])
         try await app.test(.GET, "accounts/\(createdAccount.account.id)", headers: headers, afterResponse: { res async throws in
             XCTAssertEqual(res.status, .ok)
-            let response = try res.content.decode(FindByIdAccountRequest.self)
+            let response = try res.content.decode(FindByIdAccountResponse.self)
             XCTAssertEqual(response.account.email, account.email)
             XCTAssertEqual(response.account.name, account.name)
             XCTAssertEqual(response.account.id, createdAccount.account.id)
@@ -140,7 +140,7 @@ final class AccountsTests: XCTestCase {
     }
     
     func testUpdateAccountWithoutTokenReturnsUnauthorized() async throws {
-        let createdAccount = try await performRequestToCreateNewAccount(account: makeAccount())
+        let createdAccount = try await performRequestToCreateNewAccount(account: makeCreateAccountRequestModel())
         
         try await app.test(.PATCH, "accounts/\(createdAccount.account.id)", beforeRequest: { req async throws in
             try req.content.encode(UpdateAccountRequest(name: "Other Name", email: "Other Email"))
@@ -153,7 +153,7 @@ final class AccountsTests: XCTestCase {
     }
     
     func testUpdateAccountWithValidTokenReturnsUpdatedAccount() async throws {
-        let account = makeAccount()
+        let account = makeCreateAccountRequestModel()
         let createdAccount = try await performRequestToCreateNewAccount(account: account)
         
         let authResponse = try await performRequestToAuthenticateWith(account: account)
@@ -173,7 +173,7 @@ final class AccountsTests: XCTestCase {
     }
     
     func testDeleteAccountWithoutTokenReturnsUnauthorized() async throws {
-        let createdAccount = try await performRequestToCreateNewAccount(account: makeAccount())
+        let createdAccount = try await performRequestToCreateNewAccount(account: makeCreateAccountRequestModel())
         
         try await app.test(.DELETE, "accounts/\(createdAccount.account.id)", beforeRequest: { req async throws in
             try req.content.encode(UpdateAccountRequest(name: "Other Name", email: "Other Email"))
@@ -186,7 +186,7 @@ final class AccountsTests: XCTestCase {
     }
     
     func testDeleteAccountWithInvalidIdReturnsUnauthorized() async throws {
-        let account = makeAccount()
+        let account = makeCreateAccountRequestModel()
         try await performRequestToCreateNewAccount(account: account)
         
         let authResponse = try await performRequestToAuthenticateWith(account: account)
@@ -203,7 +203,7 @@ final class AccountsTests: XCTestCase {
     }
     
     func testDeleteAccountWithValidTokenAndValidIdReturnsNoContent() async throws {
-        let account = makeAccount()
+        let account = makeCreateAccountRequestModel()
         let createdAccount = try await performRequestToCreateNewAccount(account: account)
         
         let authResponse = try await performRequestToAuthenticateWith(account: account)
@@ -215,17 +215,17 @@ final class AccountsTests: XCTestCase {
     }
     
     @discardableResult
-    private func performRequestToCreateNewAccount(account: Account) async throws -> CreateAccountResponse {
+    private func performRequestToCreateNewAccount(account: CreateAccountRequest) async throws -> CreateAccountResponse {
         var response: CreateAccountResponse!
         try await app.test(.POST, "accounts", beforeRequest: { req async throws in
-            try req.content.encode(CreateAccountRequest(name: account.name, email: account.email, password: account.password))
+            try req.content.encode(account)
         }, afterResponse: { res in
             response = try res.content.decode(CreateAccountResponse.self)
         })
         return response
     }
     
-    private func performRequestToAuthenticateWith(account: Account) async throws -> AuthenticationResponse {
+    private func performRequestToAuthenticateWith(account: CreateAccountRequest) async throws -> AuthenticationResponse {
         var response: AuthenticationResponse!
         try await app.test(.POST, "authentication", beforeRequest: { req async throws in
             try req.content.encode(AuthenticationRequest(email: account.email, password: account.password))
@@ -235,8 +235,8 @@ final class AccountsTests: XCTestCase {
         return response
     }
     
-    private func makeAccount(id: UUID = UUID(), name: String = "John", email: String = "jhondoe@mail.com", password: String = "@Strong4Password") -> Account {
-        Account(id: id, name: name, email: email, password: password)
+    private func makeCreateAccountRequestModel(name: String = "John", email: String = "jhondoe@mail.com", password: String = "@Strong4Password") -> CreateAccountRequest {
+        CreateAccountRequest(name: name, email: email, password: password)
     }
     
     private func makeAuthorizationHeader(authentication response: AuthenticationResponse) -> (String, String) {

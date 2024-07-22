@@ -44,9 +44,8 @@ struct AccountController: RouteCollection, @unchecked Sendable {
             throw Abort(.notFound, reason: "Resource not found")
         }
 
-        let accountResponse = AccountResponse(account)
-        let findByIdAccountRequest = FindByIdAccountRequest(account: accountResponse)
-        return try await findByIdAccountRequest.encodeResponse(for: request)
+        let findByIdAccountResponse = FindByIdAccountResponse(account)
+        return try await findByIdAccountResponse.encodeResponse(for: request)
     }
 
     @Sendable private func createAccount(request: Request) async throws -> Response {
