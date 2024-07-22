@@ -5,4 +5,3 @@ struct CreateAccountRequest: Content {
     let email: String
     let password: String
 }
-

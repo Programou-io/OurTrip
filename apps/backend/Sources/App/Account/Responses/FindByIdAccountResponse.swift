@@ -1,6 +1,6 @@
 import Vapor
 
-struct UpdateAccountResponse: Content, Equatable {
+struct FindByIdAccountResponse: Content {
     let account: AccountResponse
     
     init(_ account: Account) {

@@ -1,0 +1,12 @@
+excluded:
+  - Pods
+
+  - apps/backend/.build
+  - apps/backend/.swiftpm
+  - apps/backend/.public
+  - apps/backend/.resource
+
+  - apps/frontend/Derived
+  - apps/frontend/Frontend.xcodeproj
+  - apps/frontend/Frontend.xcworkspace
+  - apps/frontend/Resources
